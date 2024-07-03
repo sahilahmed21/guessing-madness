@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+
+    <title>Sahil's Madness</title>
+</head>
+
+<body>
+    <div class="guide-window">
+        <img src="C:\personal stuff\WEB D\projects\1\assets\guide.svg">
+    </div>
+    <div class="guide">Press 'H' for game guide</div>
+    <div class="start-window">
+        <h2 class="current-day">Day 1</h2>
+        <h3>Today's goal is</h3>
+        <p class="current-goal"></p>
+        <button class="start">Start</button>
+    </div>
+    <div id="counters">
+        <div id="day">Day: 1</div>
+        <div id="ingame-earning">$0.00</div>
+    </div>
+
+    <div id="timer">0:00</div>
+
+    <div class="belt">
+        <img src="C:\personal stuff\WEB D\projects\1\assets\belt.svg" alt="" />
+        <div class="item-order">
+            <div class="item-1">
+                <p class="comp-1">1</p>
+            </div>
+            <div class="item-2">
+                <p class="comp-2">2</p>
+            </div>
+            <div class="item-3">
+                <p class="comp-3">3</p>
+            </div>
+            <div class="item-4">
+                <p class="comp-4">4</p>
+            </div>
+            <div class="item-5">
+                <p class="comp-5">5</p>
+            </div>
+            <div class="item-6">
+                <p class="comp-6">6</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-window">
+        <h2>Today's earnings:</h2>
+        <div id="result">
+            <p class="total-earnings">$0.00</p>
+            <p class="outcome">Uh-oh! Game over. Time to close shop...</p>
+        </div>
+
+        <div id="bottom-buttons">
+            <button id="restart">restart</button>
+            <button id="continue">continue</button>
+        </div>
+    </div>
+
+    <div id="visual-cues">
+        <img src="C:\personal stuff\WEB D\projects\1\assets\visual_cues.svg" alt="" />
+    </div>
+
+    <audio id="good-sfx">
+        <source src="C:\personal stuff\WEB D\projects\1\assets\273924__lemonjolly__good-yoshi-in-japanese.mp3"
+            type="audio/wav" />
+    </audio>
+
+    <audio id="mistake-sfx">
+        <source src="C:\personal stuff\WEB D\projects\1\assets\235038__reitanna__japanese-huh.mp3" type="audio/wav" />
+    </audio>
+
+    <audio id="bad-sfx">
+        <source src="C:\personal stuff\WEB D\projects\1\assets\235156__reitanna__japanese-no1.mp3" type="audio/wav" />
+    </audio>
+
+    <audio id="store-sfx">
+        <source src="C:\personal stuff\WEB D\projects\1\assets\494565__775noise__shop-door-bell.mp3" type="audio/wav" />
+    </audio>
+
+    <audio id="cash-sfx">
+        <source src="./assets/75235__creek23__cha-ching.mp3" type="audio/wav" />
+    </audio>
+
+    <audio id="button-sfx">
+        <source src="C:\personal stuff\WEB D\projects\1\assets\268108__nenadsimic__button-tick.mp3" type="audio/wav" />
+    </audio>
+
+    <audio id="bgm" loop>
+        <source src="C:\personal stuff\WEB D\projects\1\assets\game-music-loop-20-156390.mp3" type="audio/wav" />
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
